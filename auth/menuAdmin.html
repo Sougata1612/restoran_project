@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <form action="../backend/menuAdmin.php" method="POST" enctype="multipart/form-data">
+        <h1>Upload Food Details</h1>
+
+            <label for="name">Food Name</label>
+            <input type="text" id="name" name="f_name" required>
+
+            <label for="price">Food Price</label>
+            <input type="number" id="price" name="f_price" required>
+
+            <label for="des">Description</label>
+            <textarea id="des" name="des" required></textarea>
+
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" required>
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Add Menu</button>
+
+    </form>
+</body>
+</html>
